@@ -1,0 +1,27 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+
+<body>
+<h2 id="headname">To Do List</h2>
+<p id="first">Enter text into the input field to add items to your list.</p>
+<p id="second">Click the item to mark it as complete.</p>
+<p id="third">Click the "X" to remove the item from your list.</p><br><br>
+
+<div class="header">    
+      <input type="text" id="myInput" placeholder="Enter the Item here....">
+      <span onclick="newElement()" class="addBtn">Add</span>
+
+</div>
+<br>
+
+<ul id="myUL">
+
+</ul>
+
+<button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+	<script src="dynamic.js"></script>
+</body>
+</html>
