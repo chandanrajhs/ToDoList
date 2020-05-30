@@ -1,5 +1,5 @@
 body {
-  margin: 20px auto;
+  margin: auto;
   min-width: 250px;
   max-width: 50%;
   background-color: skyblue;
@@ -8,24 +8,12 @@ body {
 #headname {
   margin: 10px auto;
   padding: 10px;
-  font-size:80px;
+  font-size:70px;
   text-align: center;
 }
 
 #first {
-  margin: 10px auto;
-  font-size:20px;
-  text-align: center;
-}
-
-#second {
-  font-size:20px;
-  margin: 10px auto;
-  text-align: center;
-}
-
-#third {
-  margin: 10px auto;
+  margin: 5px auto;
   font-size:20px;
   text-align: center;
 }
@@ -80,13 +68,6 @@ ul li {
   background: #fff;
   font-size: 18px;
   transition: 0.2s;
-/*
- make the list items unselectable
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-*/
 }
 
 /* Set zebra-stripes: all even list items to a different color */

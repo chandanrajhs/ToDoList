@@ -1,5 +1,13 @@
-
-
+// create a new list item when clicking on enter key 
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) 
+{
+  if (event.keyCode === 13) 
+  {
+    event.preventDefault();
+    newElement();
+  }
+});
 
 
 // Create a new list item when clicking on the "Add" button
@@ -75,11 +83,11 @@ for (i = 0; i < close.length; i++)
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
-list.addEventListener('click', function(ev)
+list.addEventListener('click', function(event)
 {
-  if (ev.target.tagName === 'LI')
+  if (event.target.tagName === 'LI')
   {
-    ev.target.classList.toggle('checked');
+    event.target.classList.toggle('checked');
   }
 }, false);
 
