@@ -1,10 +1,4 @@
-//display current date
-{
-  var currentDate  = new Date(),
-  currentDay   = currentDate.getDate() < 10 ? ('0' + currentDate.getDate()) : (currentDate.getDate());
-  currentMonth = currentDate.getMonth() < 9 ? ('0' + (currentDate.getMonth() + 1)) : (currentDate.getMonth() + 1);
-  document.getElementById("date").innerHTML = 'Things to get done on ' + currentDay + '/' + currentMonth + '/' +  currentDate.getFullYear();
-}
+
 
 
 
@@ -22,6 +16,13 @@ function newElement()
   else
     {
       document.getElementById("myUL").appendChild(li);
+	//display current date
+	{
+  	  var currentDate  = new Date(),
+  	  currentDay   = currentDate.getDate() < 10 ? ('0' + currentDate.getDate()) : (currentDate.getDate());
+  	  currentMonth = currentDate.getMonth() < 9 ? ('0' + (currentDate.getMonth() + 1)) : (currentDate.getMonth() + 1);
+  	  document.getElementById("date").innerHTML = 'Things to get done on ' + currentDay + '/' + currentMonth + '/' +  currentDate.getFullYear();
+	}
     }
 
   document.getElementById("myInput").value = "";
@@ -67,7 +68,7 @@ for (i = 0; i < close.length; i++)
   {
     var div = this.parentElement;
     div.style.display = "none";
-  }
+  }  
 }
 
 
@@ -89,4 +90,7 @@ function removeAll()
 {
   var list = document.getElementsByTagName("ul");
   list[0].innerHTML = "";
+  {
+    document.getElementById("date").innerHTML = '';
+  }
 }
