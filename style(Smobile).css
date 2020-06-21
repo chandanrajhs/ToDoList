@@ -1,0 +1,146 @@
+@media all and (min-width: 250px)
+{
+body {
+  margin: auto;
+  min-width: 200px;
+  max-width: 85%;
+  background-color: skyblue;
+}
+
+#headname {
+  margin: 0.25em auto;
+  padding: 0.05em;
+  font-size:4em;
+  text-align: center;
+}
+
+.first {
+  margin: 0.25em auto;
+  font-size:1.1em;
+  text-align: center;
+}
+
+.header {
+  background-color: crimson;
+  padding: 1rem 1.3rem;
+  color: white;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+
+}
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.addBtn {
+  padding: 0.5rem;
+  width: 25%;
+  background: #d9d9d9;
+  color: #000;
+  float: left;
+  text-align: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background-color: #9da19c;
+}
+
+#date {
+  margin: 0.2em auto;
+  font-size: 1.1em;
+  margin-left: 1.5em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: auto;
+  padding: 0em;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  padding: 0.6em 0.4em 0.6em 2.5em;
+  list-style-type: none;
+  background: #fff;
+  width: 80%;
+  font-size: 1.25em;
+  transition: 0.3s;
+}
+
+/* Set zebra-stripes: all even list items to a different color */
+ul li:nth-child(even) {
+background: #f7eae1;
+}
+ul li:hover {
+  background: #9da15c;
+}
+ul li.checked {
+  background: teal;
+  color: white;
+  text-decoration:line-through;
+}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 0.3em;
+  left: 0.8em;
+  transform: rotate(45deg);
+  height: 1em;
+  width: 0.5em;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0.5em 1em 0.6em 1em;
+
+}
+.close:hover {
+  background-color: crimson;
+  color: white;
+}
+
+input {
+  margin: 0 auto;
+  border: none;
+  width: 75%;
+  padding: 0.5em;
+  float: left;
+  font-size: 1.25em;
+}
+
+#clear-list{
+  width: 20%;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  font-family: "Times New Roman";
+  margin: 2.5em 40%;
+  padding: 0.2em;
+  background-color: darkblue;
+  color: white;
+}
+#clear-list:hover{
+  background-color: blue;
+  color: white;
+}
+#clear-list:active{
+  background-color: black;
+  color: white;
+}
+}
