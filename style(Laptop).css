@@ -1,14 +1,15 @@
-@media all and (min-width: 900px)
+@media all and (min-width: 1250px)
 {
 body {
-  margin: auto;
+  margin: 0px auto;
   min-width: 250px;
-  max-width: 50%;
+  max-width: 60%;
   background-color: skyblue;
 }
 
 #headname {
-  margin: 10px auto;
+  margin: 30px auto;
+  margin-top: 50px;
   padding: 10px;
   font-size:70px;
   text-align: center;
@@ -16,11 +17,12 @@ body {
 
 .first {
   margin: 5px auto;
-  font-size:20px;
+  font-size:22px;
   text-align: center;
 }
 
 .header {
+  margin-top: 10px;
   background-color: crimson;
   padding: 25px 35px;
   color: white;
@@ -50,7 +52,9 @@ body {
 
 #date {
   margin: 10px auto;
-  font-size:25px;
+  font-size:22px;
+  text-align: center;
+  padding-bottom:5px;
 
 }
 
@@ -127,7 +131,8 @@ input {
   font-style: italic;
   font-size: 180%;
   font-family: "Times New Roman";
-  margin: 40px 35%;
+  margin: 5px 35%;
+margin-bottom: 20px;
   background-color: darkblue;
   color: white;
 }
@@ -139,7 +144,5 @@ input {
   background-color: green;
   color: white;
 }
-#date{
-  font-size:20px;
-}
+
 }
